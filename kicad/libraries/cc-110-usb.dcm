@@ -1,0 +1,47 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 0.1u
+D Capacitor, Ceramic, 0603 SMD, 5%, 0.9mm
+$ENDCMP
+#
+$CMP 100p
+D Capacitor, Ceramic, 0603 SMD, 5%, 0.9mm
+$ENDCMP
+#
+$CMP 100u
+D Capacitor, Electrolytic, 6.3x7.7 SMD, 20%
+$ENDCMP
+#
+$CMP 10u
+D Capacitor, Electrolytic, 6.3x7.7 SMD, 20%
+$ENDCMP
+#
+$CMP 1M
+D Resistor, SMD 0603, 1%, 0.45mm
+$ENDCMP
+#
+$CMP 1k5
+D Resistor, SMD 0603, 1%, 0.45mm
+$ENDCMP
+#
+$CMP 1u
+D Capacitor, Ceramic, 0603 SMD, 5%, 0.9mm
+$ENDCMP
+#
+$CMP 22R
+D Resistor, SMD 0603, 1%, 0.45mm
+$ENDCMP
+#
+$CMP 22p
+D Capacitor, Ceramic, 0603 SMD, 5%, 0.9m
+$ENDCMP
+#
+$CMP 3k3
+D Resistor, SMD 0603, 1%, 0.45mm
+$ENDCMP
+#
+$CMP 3u3
+D Capacitor, Electrolytic, 6.3x7.7 SMD, 20%
+$ENDCMP
+#
+#End Doc Library
