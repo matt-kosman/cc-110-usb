@@ -44,4 +44,14 @@ $CMP 3u3
 D Capacitor, Electrolytic, 6.3x7.7 SMD, 20%
 $ENDCMP
 #
+$CMP 6MHz
+D Crystal
+F https://abracon.com/Resonators/ABMM.pdf
+$ENDCMP
+#
+$CMP PCM2912A
+D Audio Interface, Headset
+F https://www.ti.com/lit/ds/symlink/pcm2912a.pdf
+$ENDCMP
+#
 #End Doc Library
