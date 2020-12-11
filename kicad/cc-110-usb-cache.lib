@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 0.1u
+# cc-110-usb_0.1u
 #
-DEF 0.1u C 0 10 N N 1 F N
+DEF cc-110-usb_0.1u C 0 10 N N 1 F N
 F0 "C" 0 150 50 H V C CNN
-F1 "0.1u" 0 -150 50 H V C CNN
+F1 "cc-110-usb_0.1u" 0 -150 50 H V C CNN
 F2 "cc-110-usb:C_0603_0.9mm" 100 -100 50 H I L CNN
 F3 "" 0 0 50 V I L CNN
 F4 "Samsung Electro-Mechanics" 100 300 50 H I L CNN "Manufacturer"
@@ -22,11 +22,11 @@ X ~ 2 200 0 169 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 100p
+# cc-110-usb_100p
 #
-DEF 100p C 0 10 N N 1 F N
+DEF cc-110-usb_100p C 0 10 N N 1 F N
 F0 "C" 0 150 50 H V C CNN
-F1 "100p" 0 -150 50 H V C CNN
+F1 "cc-110-usb_100p" 0 -150 50 H V C CNN
 F2 "cc-110-usb:C_0603_0.9mm" 100 -100 50 H I L CNN
 F3 "" 0 0 50 V I L CNN
 F4 "Samsung Electro-Mechanics" 100 300 50 H I L CNN "Manufacturer"
@@ -43,11 +43,11 @@ X ~ 2 200 0 169 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 100u
+# cc-110-usb_100u
 #
-DEF 100u C 0 10 N N 1 F N
+DEF cc-110-usb_100u C 0 10 N N 1 F N
 F0 "C" 0 150 50 H V C CNN
-F1 "100u" 0 -150 50 H V C CNN
+F1 "cc-110-usb_100u" 0 -150 50 H V C CNN
 F2 "cc-110-usb:C_6.3x7.7mm" 100 -100 50 H I L CNN
 F3 "" 0 0 50 V I L CNN
 F4 "Nichicon" 100 300 50 H I L CNN "Manufacturer"
@@ -67,35 +67,11 @@ X ~ 2 200 0 169 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 10u
+# cc-110-usb_1M
 #
-DEF 10u C 0 10 N N 1 F N
-F0 "C" 0 150 50 H V C CNN
-F1 "10u" 0 -150 50 H V C CNN
-F2 "cc-110-usb:C_4.0x5.4mm" 100 -100 50 H I L CNN
-F3 "" 0 0 50 V I L CNN
-F4 "Nichicon" 100 300 50 H I L CNN "Manufacturer"
-F5 "UWX1C100MCL1GB" 100 200 50 H I L CNN "MPN"
-F6 "647-UWX1C100MCL1" 100 100 50 H I L CNN "Mouser"
-$FPLIST
- OM_Capacitor_Ceramic*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 -90 40 -90 40 N
-P 2 0 1 0 -75 25 -75 55 N
-P 2 0 1 0 -60 40 -90 40 N
-P 2 1 1 20 -30 -80 -30 80 N
-P 2 1 1 20 30 -80 30 80 N
-X ~ 1 -200 0 169 R 50 50 1 1 P
-X ~ 2 200 0 169 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# 1M
-#
-DEF 1M R 0 10 N N 1 F N
+DEF cc-110-usb_1M R 0 10 N N 1 F N
 F0 "R" 0 100 50 H V C CNN
-F1 "1M" 0 -100 50 H V C CNN
+F1 "cc-110-usb_1M" 0 -100 50 H V C CNN
 F2 "cc-110-usb:R_0603_0.5mm" 200 -100 50 H I L CNN
 F3 "" 0 0 50 H I L CNN
 F4 "Vishay" 200 300 50 H I L CNN "Manufacturer"
@@ -108,11 +84,11 @@ X ~ 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 1k5
+# cc-110-usb_1k5
 #
-DEF 1k5 R 0 10 N N 1 F N
+DEF cc-110-usb_1k5 R 0 10 N N 1 F N
 F0 "R" 0 100 50 H V C CNN
-F1 "1k5" 0 -100 50 H V C CNN
+F1 "cc-110-usb_1k5" 0 -100 50 H V C CNN
 F2 "cc-110-usb:R_0603_0.5mm" 200 -100 50 H I L CNN
 F3 "" 0 0 50 H I L CNN
 F4 "Vishay" 200 300 50 H I L CNN "Manufacturer"
@@ -125,11 +101,11 @@ X ~ 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 1u
+# cc-110-usb_1u
 #
-DEF 1u C 0 10 N N 1 F N
+DEF cc-110-usb_1u C 0 10 N N 1 F N
 F0 "C" 0 150 50 H V C CNN
-F1 "1u" 0 -150 50 H V C CNN
+F1 "cc-110-usb_1u" 0 -150 50 H V C CNN
 F2 "cc-110-usb:C_0603_0.9mm" 100 -100 50 H I L CNN
 F3 "" 0 0 50 V I L CNN
 F4 "Samsung Electro-Mechanics" 100 300 50 H I L CNN "Manufacturer"
@@ -146,11 +122,11 @@ X ~ 2 200 0 169 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 22R
+# cc-110-usb_22R
 #
-DEF 22R R 0 10 N N 1 F N
+DEF cc-110-usb_22R R 0 10 N N 1 F N
 F0 "R" 0 100 50 H V C CNN
-F1 "22R" 0 -100 50 H V C CNN
+F1 "cc-110-usb_22R" 0 -100 50 H V C CNN
 F2 "cc-110-usb:R_0603_0.5mm" 200 -100 50 H I L CNN
 F3 "" 0 0 50 H I L CNN
 F4 "Vishay" 200 300 50 H I L CNN "Manufacturer"
@@ -163,11 +139,11 @@ X ~ 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 22p
+# cc-110-usb_22p
 #
-DEF 22p C 0 10 N N 1 F N
+DEF cc-110-usb_22p C 0 10 N N 1 F N
 F0 "C" 0 150 50 H V C CNN
-F1 "22p" 0 -150 50 H V C CNN
+F1 "cc-110-usb_22p" 0 -150 50 H V C CNN
 F2 "cc-110-usb:C_0603_0.9mm" 100 -100 50 H I L CNN
 F3 "" 0 0 50 V I L CNN
 F4 "Samsung Electro-Mechanics" 100 300 50 H I L CNN "Manufacturer"
@@ -184,11 +160,11 @@ X ~ 2 200 0 169 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 3k3
+# cc-110-usb_3k3
 #
-DEF 3k3 R 0 10 N N 1 F N
+DEF cc-110-usb_3k3 R 0 10 N N 1 F N
 F0 "R" 0 100 50 H V C CNN
-F1 "3k3" 0 -100 50 H V C CNN
+F1 "cc-110-usb_3k3" 0 -100 50 H V C CNN
 F2 "cc-110-usb:R_0603_0.5mm" 200 -100 50 H I L CNN
 F3 "" 0 0 50 H I L CNN
 F4 "Vishay" 200 300 50 H I L CNN "Manufacturer"
@@ -201,11 +177,11 @@ X ~ 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 3u3
+# cc-110-usb_3u3
 #
-DEF 3u3 C 0 10 N N 1 F N
+DEF cc-110-usb_3u3 C 0 10 N N 1 F N
 F0 "C" 0 150 50 H V C CNN
-F1 "3u3" 0 -150 50 H V C CNN
+F1 "cc-110-usb_3u3" 0 -150 50 H V C CNN
 F2 "cc-110-usb:C_4.0x5.4mm" 100 -100 50 H I L CNN
 F3 "" 0 0 50 V I L CNN
 F4 "Nichicon" 100 300 50 H I L CNN "Manufacturer"
@@ -225,11 +201,11 @@ X ~ 2 200 0 169 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 5k1
+# cc-110-usb_5k1
 #
-DEF 5k1 R 0 10 N N 1 F N
+DEF cc-110-usb_5k1 R 0 10 N N 1 F N
 F0 "R" 0 100 50 H V C CNN
-F1 "5k1" 0 -100 50 H V C CNN
+F1 "cc-110-usb_5k1" 0 -100 50 H V C CNN
 F2 "cc-110-usb:R_0603_0.5mm" 200 -100 50 H I L CNN
 F3 "" 0 0 50 H I L CNN
 F4 "Vishay" 200 300 50 H I L CNN "Manufacturer"
@@ -242,11 +218,11 @@ X ~ 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# 6MHz
+# cc-110-usb_6MHz
 #
-DEF 6MHz X 0 40 Y N 1 F N
+DEF cc-110-usb_6MHz X 0 40 Y N 1 F N
 F0 "X" 0 200 50 H V C CNN
-F1 "6MHz" 150 -200 50 H V C CNN
+F1 "cc-110-usb_6MHz" 150 -200 50 H V C CNN
 F2 "cc-110-usb:X_7050_1.3mm" 150 -300 50 H I L CNN
 F3 "" 0 0 50 H I L CNN
 F4 "Abracon LLC" 150 350 50 H I L CNN "MFG"
@@ -269,11 +245,11 @@ X C C 0 -200 59 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# GND
+# cc-110-usb_GND
 #
-DEF GND #PWR 0 0 Y Y 1 F P
+DEF cc-110-usb_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "GND" 0 -150 50 H V C CNN
+F1 "cc-110-usb_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -282,11 +258,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# PCM2912A
+# cc-110-usb_PCM2912A
 #
-DEF PCM2912A U 0 20 Y Y 1 F N
+DEF cc-110-usb_PCM2912A U 0 20 Y Y 1 F N
 F0 "U" 0 0 50 H V C CNN
-F1 "PCM2912A" 0 -100 50 H V C CNN
+F1 "cc-110-usb_PCM2912A" 0 -100 50 H V C CNN
 F2 "cc-110-usb:U_TQFP-32_7x7mm_P0.8mm" 1700 1150 50 H I L CNN
 F3 "" 0 0 50 V I L CNN
 F4 "Texas Instruments" 1700 1450 50 H I L CNN "MFG"
@@ -332,11 +308,11 @@ X FL 9 1100 50 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# USB2.0_C
+# cc-110-usb_USB2.0_C
 #
-DEF USB2.0_C J 0 40 Y Y 1 F N
+DEF cc-110-usb_USB2.0_C J 0 40 Y Y 1 F N
 F0 "J" 0 950 50 H V C CNN
-F1 "USB2.0_C" 0 -1650 50 H V C CNN
+F1 "cc-110-usb_USB2.0_C" 0 -1650 50 H V C CNN
 F2 "cc-110-usb:J_DX07S016JA1R1500" 1000 650 50 H I L CNN
 F3 "" 150 200 50 H I L CNN
 F4 "JAE Electronics" 1000 950 50 H I L CNN "MFG"
@@ -370,11 +346,11 @@ X SHIELD S 500 -1450 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# XLR4M
+# cc-110-usb_XLR4M
 #
-DEF XLR4M J 0 0 Y Y 1 F N
+DEF cc-110-usb_XLR4M J 0 0 Y Y 1 F N
 F0 "J" 0 250 50 H V C CNN
-F1 "XLR4M" 200 250 50 H V C CNN
+F1 "cc-110-usb_XLR4M" 200 250 50 H V C CNN
 F2 "cc-110-usb:J_NC4MAH" 550 200 50 H I L CNN
 F3 "" 0 0 50 H I L CNN
 F4 "Neutrik" 550 500 50 H I L CNN "MFG"

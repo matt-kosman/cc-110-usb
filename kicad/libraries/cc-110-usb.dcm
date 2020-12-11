@@ -53,6 +53,11 @@ D Crystal
 F https://abracon.com/Resonators/ABMM.pdf
 $ENDCMP
 #
+$CMP GND
+D Ground symbol
+K power-flag
+$ENDCMP
+#
 $CMP PCM2912A
 D USB Audio Interface
 F https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10137062.pdf
