@@ -60,7 +60,7 @@ $ENDCMP
 #
 $CMP PCM2912A
 D USB Audio Interface
-F https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10137062.pdf
+F https://www.ti.com/lit/ds/symlink/pcm2912a.pdf
 $ENDCMP
 #
 $CMP USB2.0_C
