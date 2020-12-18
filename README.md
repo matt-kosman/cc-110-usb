@@ -1,20 +1,16 @@
-A USB Class Compliant Audio Interface for the ClearCom CC-110 Headset
+The [CC-110](https://www.clearcom.com/product/cc-110/) is a single-ear headset for ClearCom intercom systems. The cc-110-usb converter allows you to connect your CC-110 to a computer or smartphone via class-compliant USB audio.
+
+This project is designed to let you use a headset that you already have on hand. I do not recommend buying a CC-110 just to use with this converter, since there are many headsets that will work without a converter or offer better quality with less effort.
 
 # build
 
 Build a cc-110-usb using the included design files:
-* Order a set of 3 PCBs from [OSHPark]() or send the included gerbers to your preferred supplier. This project involves surface mount soldering in a small space. Review the PCB layout before proceeding.
-* Import the BOM directly into Mouser, parse it with your favorite [BOM tool](), or order parts individually.
-* Assemble the PCB according to the schematic.
-* Print the case from the STL or order from a 3D-printing service.
+* Order a set of 3 PCBs from [OSHPark](https://oshpark.com/shared_projects/4OjzXrBn) or send the included [gerbers](build/cc-110-usb_gerber.zip) to your preferred supplier. This project involves surface mount soldering in a small space. Review the PCB layout before proceeding.
+* Import the [BOM](build/cc-110-usb_bom.csv) directly into Mouser, parse it with your favorite BOM tool, or order parts individually.
+* Assemble the PCB according to the [schematic](build/cc-110-usb_schematic.pdf).
+* Print the case from the STL (in-work) or order from a 3D-printing service.
 
-Estimated cost for one unit is 35 USD, assuming that you purchase parts from Mouser and discard 2 of the 3 PCBs from OshPark.
-
-# description
-
-The [CC-110](https://www.clearcom.com/product/cc-110/) is a single-ear headset for ClearCom intercom systems. The cc-110-usb converter allows you to connect your CC-110 to a computer or smartphone via class-compliant USB audio.
-
-This project is designed to let you use a headset that you already have on hand. I do not recommend buying a CC-110 just to use with this converter, since there are many headsets that will work without a converter or offer better quality with less effort.
+Estimated cost for one unit is less than 25 USD (excluding tax, shipping, and consumables), assuming that you purchase parts from Mouser and discard 2 of the 3 PCBs from OshPark.
 
 # electrical design
 
@@ -47,9 +43,9 @@ There are a lot of assumptions here, but the results should reasonably inform th
 
 The Texas Instruments [PCM2912A](https://www.ti.com/lit/ds/symlink/pcm2912a.pdf) (PDF) is a USB class-class compliant audio codec with integrated stereo DAC and mono ADC. It is well suited to this application.
 
-The PCM2912A provides a 20 kOhm microphone preamplifier with fixed 20 dB gain followed by up to 30 dB of USB-programmable gain. The PCM2912A ADC accepts **1.4 Vpp** before clipping. The estimated input voltage of 4 mVpp after 50dB of gain is **1.3 Vpp** and should therefore be a reasonable match for the microphone. In limited breadboard tests, the received level was sufficient with the gain control set between 50% and 100% across a number of speaking volumes.
+The PCM2912A provides a 20 kOhm microphone preamplifier with fixed 20 dB gain followed by up to 30 dB of USB-programmable gain. The PCM2912A ADC accepts **1.4 Vpp** before clipping. The estimated input voltage of 4 mVpp after 50dB of gain is **1.3 Vpp** and should therefore be a reasonable match for the ADC. In limited breadboard tests, the received level was sufficient with the gain control set between 50% and 100% across a number of speaking volumes.
 
-The PCM2912A provides a per-channel speaker output of 1.3 V, yielding 13 mW into a 32 Ohm load from a calculated 32 Ohm internal resistance. Connecting the CC-110 400 Ohm load and summing the left and right channels through a comparably low value mixing resistor results in **14 mW** delivered to the headset. This is less than the estimated HMS-4X maximum output but still sufficient to produce about 110 dB SPL from the representative earpiece. The actual output volume will also depend on the level of the media source. In limited breadboard tests, the headset volume was sufficiently loud.
+The PCM2912A provides a per-channel speaker output of 1.3 V, yielding 13 mW into a 32 Ohm load from a calculated 32 Ohm internal resistance. Connecting the CC-110 400 Ohm load and summing the left and right channels through a comparably low value mixing resistor results in about **14 mW** delivered to the headset. This is less than the estimated HMS-4X maximum output but still sufficient to produce 110 dB SPL from the representative earpiece. The actual output volume will also depend on the level of the media source. In limited breadboard tests, the headset volume was sufficiently loud.
 
 ## history
 All designs that interfaced with the computer of smartphone's integrated headset circuit were rejected because of unpredictable and varied performance across devices.
@@ -59,13 +55,11 @@ All designs that interfaced with the computer of smartphone's integrated headset
 
 # pcb design
 
-<p align="center"><img width="75%" src="kicad/images/cc-110-usb_top.png"></br><b></b></p>
-
 ## components
 Components were selected, in priority order,
 * To meet the requirements of the circuit;
-* To source from a single supplier, in this case Mouser due to the XLR4M connector;
-* To be possible for hand soldering with an iron; and
+* To be possible for hand soldering with an iron;
+* To source from a single supplier, in this case Mouser due to the XLR4M connector; and
 * To minimize cost.
 
 ## layout
@@ -73,7 +67,8 @@ Layout was primarily optimized for size, with locations assigned based on trace 
 
 Decoupling capacitors are placed beneath the PCM2912A IC; the microphone input trace is short and separated from other traces. To the extent possible, analog signals and digital signals are separated on opposite sides of the board, though they share the same ground plane.
 
-The crystal was forced farther from the IC than ideal; the oscillator capacitors can be adjusted to accommodate if necessary, and the 6MHz signals are not expected to impact noise performance. The USB signals are forced to leave the connector from both sides and through longer traces than ideal, but this is not expected to affect performance.
+The crystal was forced farther from the IC than ideal; the oscillator capacitors can be adjusted to accommodate if necessary. The USB signals are forced to leave the connector from both sides and through longer traces than ideal, but this is not expected to affect performance.
+
 # mechanical design
 
 # changelog
