@@ -2,7 +2,7 @@
 
 The cc-110-usb converter allows you to connect a ClearCom [CC-110](https://www.clearcom.com/product/cc-110/) single-ear headset to a computer or smartphone via class-compliant USB audio.
 
-<p align="center"><img height="500" src="images/cc-110-usb_angle-top.jpg"></br><b>cc-110-usb without enclosure</b></p>
+<p align="center"><img width="70%" src="images/cc-110-usb_angle-top.jpg"></br><b>cc-110-usb without enclosure</b></p>
 
 # build
 
@@ -66,26 +66,26 @@ Components were selected, in priority order,
 
 USB C allows the converter to easily connect to both laptops and smartphones. It is easily adapted to USB A externally if required.
 
-<p align="center"><img height="300" src="images/cc-110-usb_top.jpg"></br><b>CC-110 PCB top</b></p>
+<p align="center"><img width="50%" src="images/cc-110-usb_top.jpg"></br><b>CC-110 PCB top</b></p>
 
 ## layout
 Layout is primarily optimized for size, with locations assigned based on trace length sensitivity.
 
 Decoupling capacitors are placed beneath the PCM2912A IC; the microphone input trace is short and separated from other traces. To the extent possible, analog signals and digital signals are separated on opposite sides of the board, though they share the same ground plane.
 
-<p align="center"><img height="300" src="images/cc-110-usb_angle-bottom.jpg"></br><b>CC-110 PCB bottom</b></p>
+<p align="center"><img width="50%" src="images/cc-110-usb_angle-bottom.jpg"></br><b>CC-110 PCB bottom</b></p>
 
 Other common layout best practices have a negligible impact due to the small PCB size and are therefore deprioritized. For example, the crystal and IC are located on opposite sides of the board, but the absolute length is still small enough to prevent the need to specifically tune the load capacitors. Similarly, the USB traces leave the connector from both sides, rather than in parallel, but the short distance mitigates signal loss or noise issues.
 
 # mechanical design
 
-<p align="center"><img height="300" src="images/cc-110-usb_assembled-in-enclosure.jpg"></br><b>cc-110-usb in enclosure</b></p>
+<p align="center"><img width="50%" src="images/cc-110-usb_assembled-in-enclosure.jpg"></br><b>cc-110-usb in enclosure</b></p>
 
 A basic 3D-printed cylindrical enclosure contains the cc-110-usb PCB assembly. The mechanical design is primarily functional, with no specific assessment of durability or stress.
 
 The enclosure is constructed of two parts. A single machine screw restrains the XLR4-side enclosure, the XLR4 connector itself, and the USB-side enclosure. The USB-side enclosure has a standoff that captures a retaining nut and a slot to hold the PCB.
 
-<p align="center"><img height="300" src="images/cc-110-usb_enclosure-only.jpg"></br><b>cc-110-usb enclosure disassembled</b></p>
+<p align="center"><img width="50%" src="images/cc-110-usb_enclosure-only.jpg"></br><b>cc-110-usb enclosure disassembled</b></p>
 
 The pictured assembly uses a McMaster [92949A116](https://www.mcmaster.com/92949A116/) machine screw and [91841A005](https://www.mcmaster.com/91841A005/) nut. This \#4-40 screw is slightly too large for the XLR4 connector's opening, and a small file was used to increase the diameter of the XLR4. A smaller screw may avoid this problem.
 
@@ -95,7 +95,7 @@ Similarly, depending on the quality of 3D print, the USB-side enclosure may need
 
 Before designing the USB converter, I first attempted a direct connection from the XLR4 to my laptop's TRRS headset jack.
 
-<p align="center"><img height="200" src="images/passive_top.jpg"></br><b>passive XLR4 to TRRS adapter</b></p>
+<p align="center"><img width="40%"" src="images/passive_top.jpg"></br><b>passive XLR4 to TRRS adapter</b></p>
 
 While this worked with my phone, it did not work with my laptop. Further research then suggested that a passive converter is not the right approach because performance would vary across devices.
 * Each device has unique gain capabilities and microphone impedance requirements, which can affect the ability to cleanly amplify a signal from the CC-110.
